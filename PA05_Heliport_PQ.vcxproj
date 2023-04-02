@@ -27,7 +27,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Helicopter.cpp" />
-    <ClCompile Include="source\Heliport.cpp" />
     <ClCompile Include="source\PA05_Heliport_PQ.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

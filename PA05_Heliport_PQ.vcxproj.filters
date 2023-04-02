@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="source\Helicopter.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="source\Speedometer.h">
       <Filter>Source Files</Filter>
     </ClInclude>
@@ -30,15 +27,15 @@
     <ClInclude Include="source\Heliport.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="source\Helicopter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Helicopter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="source\PA05_Heliport_PQ.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="source\Heliport.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
