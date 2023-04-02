@@ -53,7 +53,7 @@ private:
 public:
     // constructors
     Heliport() { }
-    // for backward compatibility
+    // for backward compatibility with vector version
     Heliport(int nHelosExpected) { }
 
     //--------------------------------------------------------------------------
