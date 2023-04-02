@@ -28,7 +28,7 @@ constexpr int NUM_HELOS = 4;
 // globals
 //------------------------------------------------------------------------------
 namespace heli {
-    Heliport port(NUM_HELOS);
+    Heliport port;
 
     string names[] = { 
         "Apache 7",
