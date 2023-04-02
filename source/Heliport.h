@@ -8,6 +8,9 @@
 #include <vector>
 using std::vector;
 
+//------------------------------------------------------------------------------
+// Heliport
+//------------------------------------------------------------------------------
 class Heliport {
 private:
     vector<Helicopter> vHelosPQ;
@@ -47,6 +50,7 @@ public:
     // - return true if vector is not empty, false otherwise
     //--------------------------------------------------------------------------
     bool front(Helicopter& returnHelo) {
+
         if (vHelosPQ.empty()) {
             return false;
         }
@@ -59,6 +63,7 @@ public:
     // - if vector is not empty, remove Helicopter at index 0
     //--------------------------------------------------------------------------
     void pop_front() {
+
         if (!vHelosPQ.empty()) {
             vHelosPQ.erase(vHelosPQ.begin());
         }
