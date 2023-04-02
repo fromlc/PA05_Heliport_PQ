@@ -57,16 +57,14 @@ public:
     //--------------------------------------------------------------------------
     // insert Helicopter with fuel levels in ascending order
     //--------------------------------------------------------------------------
-    void insert(Helicopter h) {
-
-        pqHelos.push(h);
-    }
+    void insert(Helicopter h) { pqHelos.push(h); }
 
     //--------------------------------------------------------------------------
-    // - if vector not empty, fill reference param with Helicopter at index 0
-    // - return true if vector is not empty, false otherwise
+    // - if priority queue not empty, fill reference param with top element
+    // - return true if priority queue is not empty, false otherwise
     //--------------------------------------------------------------------------
     bool front(Helicopter& returnHelo) {
+
         if (pqHelos.empty()) {
             return false;
         }
@@ -76,9 +74,10 @@ public:
     }
 
     //--------------------------------------------------------------------------
-    // - if vector is not empty, remove Helicopter at index 0
+    // - if priority queue is not empty, remove top element
     //--------------------------------------------------------------------------
     void pop_front() {
+
         if (!pqHelos.empty()) {
             pqHelos.pop();
         }
