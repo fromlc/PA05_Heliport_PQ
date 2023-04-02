@@ -53,6 +53,8 @@ private:
 public:
     // constructors
     Heliport() { }
+    // for backward compatibility
+    Heliport(int nHelosExpected) { }
 
     //--------------------------------------------------------------------------
     // insert Helicopter with fuel levels in ascending order
