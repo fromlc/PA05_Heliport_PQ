@@ -76,12 +76,11 @@ void initIncoming() {
         // call by value generates copy
         // to prevent dangling reference and keep names unique
         heli::port.insert(h);
-
     }
 }
 
 //------------------------------------------------------------------------------
-// displays helicopter landings
+// displays helicopter landings with fuel levels in ascending order
 //------------------------------------------------------------------------------
 void displayLandings() {
 
