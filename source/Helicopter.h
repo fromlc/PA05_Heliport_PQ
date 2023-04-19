@@ -8,7 +8,9 @@
 #include "FuelGauge.h"
 #include "Speedometer.h"
 
+#include <ostream>
 #include <string>
+using std::ostream;
 using std::string;
 
 //------------------------------------------------------------------------------
@@ -71,7 +73,22 @@ public:
 	void setName(const string&);
 	string getName() const;
 
+	// overload stream insertion operator <<
+	friend static ostream& operator<<(std::ostream&, Helicopter&);
+
 private:
 	int _setThrottle(speedSelect);
 };
+
+//------------------------------------------------------------------------------
+// overload stream insertion operator <<
+//------------------------------------------------------------------------------
+static ostream& operator<<(std::ostream& os, Helicopter& h) {
+
+	os << h.name << " has "
+		<< h.fg.getFuelAmount() << " gallons of fuel";
+
+	return os;
+}
+
 #endif // HELICOPTER_H

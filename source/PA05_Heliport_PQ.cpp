@@ -89,9 +89,9 @@ void displayLandings() {
     Helicopter h;
     int i = 1;
 
+    cout << "Landings in ascending order of remaining fuel\n";
     while (heli::port.front(h)) {
-        cout << i++ << ": " << h.getName() 
-            << " landing with " << h.getFuelLeft() << " gallons of fuel\n";
+        cout << i++ << ": " << h << '\n';
 
         heli::port.pop_front();
     }
